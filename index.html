@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faça seu pedido!</title>
+    <link rel="stylesheet" href="master.css">
+    <link href="https://fonts.googleapis.com/css2?family=Muli:wght@300&family=Raleway:wght@300&display=swap" rel="stylesheet">
+</head>
+
+
+<body>
+    <header>
+    <h2>Big Burger's | <span> PEDIDOS</span></h2>
+    <nav>
+        <ul>
+            <li><a href="">Editar produtos</a></li>
+            <li><a href="relatorio.php">Relatório do Dia</a></li>
+        
+        </ul>
+    </nav>
+    </header>
+
+    <main>
+    <!-- Cadastro do Pedido --> 
+    <section class="inPedidos">
+        <fieldset>
+            <legend>Pedido</legend>
+
+            <!-- Formulário com os dados do cliente + pedido escolhido -->
+            <form action="index.html" method="post" class="inFormulario">
+                <label for="">Dados do Cliente</label><br>
+                <input type="text" name="nome" value="" id="inNome" placeholder="Nome"> <br>
+                <div class="error" id="error"></div>
+                <input type="text" name="nome" value="" id="inTelefone" placeholder="Telefone"> <br>
+                <label for="">Endereço de Entrega</label><br>
+                <input type="text" name="rua" value="" id="inRua" placeholder="Rua"><br>
+                <input type="text" name="complemento" value="" id="inComplemento" placeholder="Complemento"><br>
+
+
+
+            <label for="">Escolha seu lanche</label>
+            <select class="" name="" id="inLanches">
+                <option value="">-</option>
+                <option value="">X-Calabresa</option>
+                <option value="">X-Frango c/ Catupiry</option>
+                <option value="">X-Mignon c/ Cheddar</option>
+                <option value="">X-Tudo</option>
+                <option value="">X-Vegano</option>
+                <option value="">X-Linguicinha c/ Bacon</option>
+            </select>
+            <br><br>
+            <label for="">Bebida</label>
+            <select class="" name="" id="inBebidas">
+                <option value="">-</option>
+                <option value="">Coca lata</option>
+                <option value="">Guaraná lata</option>
+                <option value="">Coca 2 L</option>
+                <option value="">Guaraná 2 L</option>
+                <option value="">Heineken lata</option>
+                <option value="">Skol</option>
+            </select>
+
+            <input class="enviar" type="button" name="btnRegistrar" id="btnRegistrar" value="Enviar pedido">
+            </form>
+        </fieldset> <br>
+    </section>
+    <!-- Saída de pedidos -->
+    <section class="outDetalhes">
+    <pre> Olá! </pre>
+    </section>
+    </main>
+
+
+<script src="master.js"></script>    
+</body>
+</html>
